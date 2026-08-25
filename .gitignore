@@ -1,0 +1,21 @@
+# Archives (source zips, not needed once extracted/split into their own repos)
+*.zip
+
+# Heavy project folders — live in their own separate GitHub repos, not in the portfolio repo
+commune_memoirs_epfl_dh412-main/
+music_generation_epfl_dh401-main/
+music_generation_epfl_dh401-assignment1/
+music_generation_epfl_dh401-assignment2/
+music_generation_epfl_dh401-assignment3/
+
+# Personal documents not published on the site
+Master_Thesis (1).pdf
+Reference_Letter_Shayan_Khajenouri.pdf
+
+# Tooling
+.claude/
+
+# OS / editor cruft
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/

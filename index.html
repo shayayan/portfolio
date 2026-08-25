@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shayan Khajehnouri — AI Researcher & Data Scientist</title>
+    <meta name="description" content="Shayan Khajehnouri — MSc Digital Humanities (EPFL). Machine learning, sports analytics, NLP and computational research portfolio.">
+    <meta property="og:title" content="Shayan Khajehnouri — AI Researcher & Data Scientist">
+    <meta property="og:description" content="Machine Learning, Sports AI & Computational Research. MSc Digital Humanities, EPFL.">
+    <meta property="og:type" content="website">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2245%22 fill=%22%234f46e5%22/></svg>">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .font-mono { font-family: 'JetBrains Mono', monospace; }
+    </style>
+</head>
+<body class="bg-white text-slate-900 antialiased selection:bg-indigo-500 selection:text-white">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-100">
+        <div class="max-w-6xl mx-auto px-6 h-18 flex items-center justify-between">
+            <a href="#hero" class="font-bold text-lg tracking-tight text-slate-900 flex items-center space-x-2">
+                <span class="w-3 h-3 rounded-full bg-indigo-600"></span>
+                <span>Shayan Khajehnouri</span>
+            </a>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-600">
+                <a href="#about" class="hover:text-indigo-600 transition-colors" data-en="About" data-fr="À propos">About</a>
+                <a href="#experience" class="hover:text-indigo-600 transition-colors" data-en="Experience" data-fr="Expérience">Experience</a>
+                <a href="#academics" class="hover:text-indigo-600 transition-colors" data-en="Projects" data-fr="Projets">Projects</a>
+                <a href="#contact" class="hover:text-indigo-600 transition-colors" data-en="Contact" data-fr="Contact">Contact</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <!-- Language Switcher -->
+                <button onclick="toggleLang()" id="langBtn" class="px-3 py-1.5 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 font-mono text-xs font-bold transition-all flex items-center space-x-1.5">
+                    <i class="fa-solid fa-globe text-indigo-600"></i>
+                    <span id="langText">FR</span>
+                </button>
+                <a href="mailto:shayan.khajehnouri@gmail.com" class="px-4 py-2 rounded-lg bg-slate-900 hover:bg-slate-800 text-white font-medium text-xs transition-all" data-en="Let's Talk" data-fr="Discutons">
+                    Let's Talk
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="hero" class="py-24 md:py-36 max-w-6xl mx-auto px-6">
+        <div class="max-w-3xl">
+            <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-semibold mb-6">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span data-en="MSc Digital Humanities • EPFL Graduate" data-fr="Master Digital Humanities • Diplômé EPFL">MSc Digital Humanities • EPFL Graduate</span>
+            </div>
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-slate-900 leading-[1.15] mb-6" data-en="Machine Learning, Sports AI & Computational Research." data-fr="Machine Learning, IA Sportive & Recherche Computationnelle.">
+                Machine Learning, Sports AI & Computational Research.
+            </h1>
+            <p class="text-lg sm:text-xl text-slate-600 leading-relaxed mb-10" data-en="I engineer intelligent systems for complex domains—from tracking football formations in sports analytics to NLP text mining and algorithmic music generation." data-fr="Je conçois des systèmes intelligents pour des domaines complexes — du suivi de formations tactiques en analyse sportive au traitement du texte (NLP) et à la génération musicale algorithmique.">
+                I engineer intelligent systems for complex domains—from tracking football formations in sports analytics to NLP text mining and algorithmic music generation.
+            </p>
+            <div class="flex flex-wrap gap-4">
+                <a href="#experience" class="px-6 py-3 rounded-xl bg-indigo-600 hover:bg-indigo-500 text-white font-semibold text-sm shadow-lg shadow-indigo-600/20 transition-all" data-en="View Professional Work" data-fr="Voir l'expérience">
+                    View Professional Work
+                </a>
+                <a href="https://github.com/shayayan" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-900 font-semibold text-sm transition-all flex items-center space-x-2">
+                    <i class="fa-brands fa-github"></i>
+                    <span data-en="GitHub Profile" data-fr="Profil GitHub">GitHub Profile</span>
+                </a>
+                <a href="CV_en.pdf" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-white border border-slate-300 hover:border-indigo-400 hover:text-indigo-600 text-slate-900 font-semibold text-sm transition-all flex items-center space-x-2">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    <span data-en="Download CV" data-fr="Télécharger le CV">Download CV</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-slate-50 border-y border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-indigo-600 mb-3 font-bold" data-en="Background" data-fr="Profil">Background</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl sm:text-3xl font-bold text-slate-900 mb-6" data-en="Scientific Rigor Meets Modern Engineering" data-fr="Rigueur Scientifique & Ingénierie Moderne">Scientific Rigor Meets Modern Engineering</h3>
+                    <div class="space-y-4 text-slate-600 leading-relaxed">
+                        <p data-en="As an EPFL Digital Humanities graduate, I combine advanced data science methods with domain expertise. My academic background spans computer vision, spatial statistics, and computational linguistics." data-fr="Diplômé en Digital Humanities de l'EPFL, je combine des méthodes avancées de science des données et une expertise métier. Mon parcours académique couvre la vision par ordinateur, la statistique spatiale et la linguistique computationnelle.">
+                            As an EPFL Digital Humanities graduate, I combine advanced data science methods with domain expertise. My academic background spans computer vision, spatial statistics, and computational linguistics.
+                        </p>
+                        <p data-en="Whether building private tracking models for professional football clubs or extracting semantic insights from historical commune archives, my approach emphasizes clean architecture, reproducibility, and robust quantitative evaluation." data-fr="Qu'il s'agisse de concevoir des modèles de suivi pour des clubs de football professionnels ou d'extraire des analyses sémantiques d'archives historiques communales, mon approche privilégie une architecture propre, la reproductibilité et une évaluation quantitative rigoureuse.">
+                            Whether building private tracking models for professional football clubs or extracting semantic insights from historical commune archives, my approach emphasizes clean architecture, reproducibility, and robust quantitative evaluation.
+                        </p>
+                    </div>
+                </div>
+                <div class="space-y-4">
+                    <div class="p-6 rounded-2xl bg-white border border-slate-200 shadow-sm">
+                        <h4 class="font-bold text-slate-900 mb-4" data-en="Core Stack" data-fr="Stack Technique">Core Stack</h4>
+                        <div class="grid grid-cols-2 gap-x-3 gap-y-2.5 text-xs font-mono text-slate-600">
+                            <span class="flex items-center space-x-2"><i class="fa-brands fa-python text-indigo-500 w-4"></i><span>Python</span></span>
+                            <span class="flex items-center space-x-2"><i class="fa-solid fa-fire text-amber-500 w-4"></i><span>PyTorch</span></span>
+                            <span class="flex items-center space-x-2"><i class="fa-solid fa-table text-emerald-500 w-4"></i><span>Pandas</span></span>
+                            <span class="flex items-center space-x-2"><i class="fa-solid fa-calculator text-blue-500 w-4"></i><span>NumPy</span></span>
+                            <span class="flex items-center space-x-2"><i class="fa-solid fa-snowflake text-sky-500 w-4"></i><span>Snowflake</span></span>
+                            <span class="flex items-center space-x-2"><i class="fa-solid fa-chart-bar text-yellow-500 w-4"></i><span>PowerBI</span></span>
+                            <span class="flex items-center space-x-2"><i class="fa-solid fa-cube text-cyan-500 w-4"></i><span>Docker</span></span>
+                            <span class="flex items-center space-x-2"><i class="fa-solid fa-chart-line text-indigo-500 w-4"></i><span>Scikit-Learn</span></span>
+                            <span class="flex items-center space-x-2"><i class="fa-solid fa-database text-blue-500 w-4"></i><span>SQL</span></span>
+                            <span class="flex items-center space-x-2"><i class="fa-brands fa-git-alt text-orange-500 w-4"></i><span>Git</span></span>
+                            <span class="flex items-center space-x-2"><i class="fa-solid fa-book text-amber-500 w-4"></i><span>Jupyter</span></span>
+                            <span class="flex items-center space-x-2"><i class="fa-solid fa-brain text-pink-500 w-4"></i><span>NLP</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="py-24 max-w-6xl mx-auto px-6">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-indigo-600 mb-3 font-bold" data-en="Experience" data-fr="Expérience">Experience</h2>
+        <h3 class="text-3xl font-bold text-slate-900 mb-12" data-en="Professional Experience & Research" data-fr="Expérience Professionnelle & Recherche">Professional Experience & Research</h3>
+
+        <div class="space-y-8">
+            <!-- Losinger Marazzi Internship Card -->
+            <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-sm hover:border-indigo-300 transition-all">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-6">
+                    <div>
+                        <span class="text-xs font-mono text-indigo-600 font-semibold" data-en="March 2026 – Present • Full-Time On-Site" data-fr="Mars 2026 – Présent • Temps Plein sur Site">March 2026 – Present • Full-Time On-Site</span>
+                        <h4 class="text-2xl font-bold text-slate-900 mt-1" data-en="Data Scientist Intern" data-fr="Stagiaire Data Scientist">Data Scientist Intern</h4>
+                        <p class="text-slate-600 text-sm font-medium" data-en="Losinger Marazzi SA (Bouygues Construction) — Warranty, Quality & Prevention Dept (SGQP), Zurich" data-fr="Losinger Marazzi SA (Bouygues Construction) — Dépt Garantie, Qualité & Prévention (SGQP), Zurich">Losinger Marazzi SA (Bouygues Construction) — Warranty, Quality & Prevention Dept (SGQP), Zurich</p>
+                    </div>
+                    <span class="px-3 py-1 rounded-full bg-indigo-50 text-indigo-700 text-xs font-mono font-medium border border-indigo-200 self-start" data-en="Current Position" data-fr="Poste Actuel">
+                        Current Position
+                    </span>
+                </div>
+                <div class="space-y-4 text-slate-600 leading-relaxed mb-6 text-sm sm:text-base">
+                    <p data-en="Driving data and digitalisation initiatives across three business environments, collaborating closely with prevention officers and warranty managers:" data-fr="Pilotage d'initiatives de données et de digitalisation à travers trois environnements métiers, en étroite collaboration avec les responsables prévention et gestionnaires de garantie :">
+                        Driving data and digitalisation initiatives across three business environments, collaborating closely with prevention officers and warranty managers:
+                    </p>
+                    <ul class="list-disc list-inside space-y-2 pl-2">
+                        <li><strong class="text-slate-900 font-semibold" data-en="Data Architecture & BI:" data-fr="Architecture Data & BI :">Data Architecture & BI:</strong> <span data-en="Explored and structured multi-system business data, developed SQL views in Snowflake, and built 3 end-to-end Power BI dashboards (requirements gathering, semantic modeling, DAX measures, and testing) while improving ~10 existing reports." data-fr="Exploration et structuration de données métiers multi-systèmes, développement de vues SQL dans Snowflake, et création de 3 tableaux de bord Power BI de bout en bout (cadrage, modélisation sémantique, mesures DAX, tests) tout en améliorant une dizaine de rapports existants.">Explored and structured multi-system business data, developed SQL views in Snowflake, and built 3 end-to-end Power BI dashboards (requirements gathering, semantic modeling, DAX measures, and testing) while improving ~10 existing reports.</span></li>
+                        <li><strong class="text-slate-900 font-semibold" data-en="AI Automation & Classification:" data-fr="Automatisation & Classification par IA :">AI Automation & Classification:</strong> <span data-en="Proposed and built an automated classification pipeline for over 90,000 warranty claims using internal AI tooling, applying a structured scientific approach with 5-6 parameters to achieve 70% to 80% accuracy." data-fr="Proposition et développement d'un pipeline de classification automatisé pour plus de 90 000 réclamations de garantie via l'outil IA interne, selon une approche scientifique structurée (5 à 6 paramètres) atteignant 70% à 80% d'exactitude.">Proposed and built an automated classification pipeline for over 90,000 warranty claims using internal AI tooling, applying a structured scientific approach with 5-6 parameters to achieve 70% to 80% accuracy.</span></li>
+                        <li><strong class="text-slate-900 font-semibold" data-en="Taxonomy Rebuilding:" data-fr="Refonte de Taxonomie :">Taxonomy Rebuilding:</strong> <span data-en="Rebuilt the core reference taxonomy for categorizing warranty defects, streamlining department-wide categorization and reporting." data-fr="Refonte de la taxonomie de référence pour la catégorisation des défauts de garantie, simplifiant le reporting et le classement à l'échelle du département.">Rebuilt the core reference taxonomy for categorizing warranty defects, streamlining department-wide categorization and reporting.</span></li>
+                        <li><strong class="text-slate-900 font-semibold" data-en="Agile & Cross-functional impact:" data-fr="Impact Agile & Transversal :">Agile & Cross-functional impact:</strong> <span data-en="Developed AI agents, contributed to internal data newsletters, and benchmarked software solutions for core business system replacement." data-fr="Développement d'agents IA, contribution aux newsletters internes sur les données et benchmark de solutions logicielles pour le remplacement du système métier principal.">Developed AI agents, contributed to internal data newsletters, and benchmarked software solutions for core business system replacement.</span></li>
+                    </ul>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-700 text-xs flex items-center justify-between flex-wrap gap-2">
+                    <div class="flex items-center space-x-2">
+                        <i class="fa-solid fa-quote-left text-indigo-600"></i>
+                        <span data-en="Recommended by Louis Lemoine (Data & Digitalisation Lead) for Data Analyst, Scientist or Engineer roles." data-fr="Recommandé par Louis Lemoine (Responsable Data & Digitalisation) pour des rôles de Data Analyst, Scientist ou Engineer.">Recommended by Louis Lemoine (Data & Digitalisation Lead) for Data Analyst, Scientist or Engineer roles.</span>
+                    </div>
+                    <span class="font-mono text-indigo-600 font-semibold" data-en="German (B1-B2 level achieved)" data-fr="Allemand (niveau B1-B2 atteint)">German (B1-B2 level achieved)</span>
+                </div>
+            </div>
+
+            <!-- DeepScouting Master Thesis Card -->
+            <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-sm">
+                <div class="flex flex-col md:flex-row md:items-center justify-between gap-2 mb-6">
+                    <div>
+                        <span class="text-xs font-mono text-indigo-600 font-semibold" data-en="September 2025 • Master Thesis" data-fr="Septembre 2025 • Thèse de Master">September 2025 • Master Thesis</span>
+                        <h4 class="text-2xl font-bold text-slate-900 mt-1" data-en="Football Player Re-Identification Using Tactical Formations" data-fr="Ré-identification de Joueurs de Football par Formations Tactiques">Football Player Re-Identification Using Tactical Formations</h4>
+                        <p class="text-slate-600 text-sm font-medium" data-en="DeepScouting • EPFL (Supervised by Claire Seceh, Alexandre Alahi, Selim Kebaier)" data-fr="DeepScouting • EPFL (Supervisé par Claire Seceh, Alexandre Alahi, Selim Kebaier)">DeepScouting • EPFL (Supervised by Claire Seceh, Alexandre Alahi, Selim Kebaier)</p>
+                    </div>
+                    <span class="px-3 py-1 rounded-full bg-amber-50 text-amber-700 text-xs font-mono font-medium border border-amber-200 self-start" data-en="Confidential / Proprietary" data-fr="Confidentiel / Propriétaire">
+                        Confidential / Proprietary
+                    </span>
+                </div>
+                <div class="space-y-4 text-slate-600 leading-relaxed mb-6 text-sm sm:text-base">
+                    <p data-en="Addressed limitations of appearance-based re-identification in wide-angle football videos by introducing a novel spatial approach:" data-fr="Résolution des limites de la ré-identification par apparence dans les vidéos de football grand angle en introduisant une nouvelle approche spatiale :">
+                        Addressed limitations of appearance-based re-identification in wide-angle football videos by introducing a novel spatial approach:
+                    </p>
+                    <ul class="list-disc list-inside space-y-1.5 pl-2">
+                        <li><span data-en="Clustered players into tactical lines (defense, midfield, attack) using K-means clustering." data-fr="Clustering des joueurs en lignes tactiques (défense, milieu, attaque) via K-means.">Clustered players into tactical lines (defense, midfield, attack) using K-means clustering.</span></li>
+                        <li><span data-en="Assigned positional roles based on relative spatial organization within each line." data-fr="Attribution de rôles positionnels selon l'organisation spatiale relative dans chaque ligne.">Assigned positional roles based on relative spatial organization within each line.</span></li>
+                        <li><span data-en="Achieved an overall accuracy of" data-fr="Obtention d'une précision globale de">Achieved an overall accuracy of</span> <strong class="text-slate-900 font-semibold">62.1%</strong> <span data-en="and an IDF1 score of" data-fr="et d'un score IDF1 de">and an IDF1 score of</span> <strong class="text-slate-900 font-semibold">76.62%</strong> <span data-en="on a private annotated dataset." data-fr="sur un jeu de données annoté privé.">on a private annotated dataset.</span></li>
+                    </ul>
+                </div>
+                <div class="p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-800 text-xs flex items-center space-x-3">
+                    <i class="fa-solid fa-lock text-amber-600 text-base"></i>
+                    <span data-en="Note: The paper and code are confidential and proprietary property of DeepScouting." data-fr="Note : L'article et le code sont confidentiels et propriété exclusive de DeepScouting.">Note: The paper and code are confidential and proprietary property of DeepScouting.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Projects -->
+    <section id="academics" class="py-24 bg-slate-50 border-t border-slate-100">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-xs font-mono uppercase tracking-widest text-indigo-600 mb-3 font-bold" data-en="Academic Portfolio" data-fr="Projets Académiques">Academic Portfolio</h2>
+            <h3 class="text-3xl font-bold text-slate-900 mb-12" data-en="University Projects" data-fr="Projets Universitaires">University Projects</h3>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                <!-- IMDB Bad Movies Project -->
+                <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-mono bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-semibold">EPFL • ADA (2022)</span>
+                            <a href="https://epfl-ada.github.io/ada-2022-project-zozoz" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-indigo-600 transition-colors">
+                                <i class="fa-solid fa-arrow-up-right-from-square text-lg"></i>
+                            </a>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3" data-en="What Makes a Movie Bad?" data-fr="Qu'est-ce qui rend un film mauvais ?">What Makes a Movie Bad?</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6" data-en="An Applied Data Analysis (ADA) project exploring the underlying factors that make a film fail or receive poor ratings using the IMDb dataset." data-fr="Un projet d'Analyse Appliquée des Données (ADA) explorant les facteurs sous-jacents qui font échouer un film ou obtenir de mauvaises notes via la base de données IMDb.">
+                            An Applied Data Analysis (ADA) project exploring the underlying factors that make a film fail or receive poor ratings using the IMDb dataset.
+                        </p>
+                    </div>
+                    <div class="space-y-3 pt-4 border-t border-slate-100">
+                        <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-600 mb-2">
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100" data-en="Data Analysis" data-fr="Analyse de Données">Data Analysis</span>
+                            <span class="px-2.5 py-1 rounded-md bg-slate-100">IMDb Database</span>
+                        </div>
+                        <a href="https://epfl-ada.github.io/ada-2022-project-zozoz" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-indigo-600 hover:underline flex items-center justify-between">
+                            <span data-en="View Project Website & Presentation" data-fr="Voir le site & présentation">View Project Website & Presentation</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Commune Memoirs -->
+                <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-mono bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-semibold">EPFL • DH-412</span>
+                            <a href="https://github.com/shayayan/commune_memoirs_epfl_dh412" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-slate-900">
+                                <i class="fa-brands fa-github text-lg"></i>
+                            </a>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3">Les Mémoires de la Commune</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6" data-en="NLP and text-mining pipeline analyzing historical commune memoirs using text preprocessing, sentence embeddings, TF-IDF, named entity recognition, and LDA topic modeling." data-fr="Pipeline NLP et text-mining analysant des mémoires de communes historiques via le prétraitement de texte, des embeddings de phrases, TF-IDF, la reconnaissance d'entités nommées et la modélisation de sujets (LDA).">
+                            NLP and text-mining pipeline analyzing historical commune memoirs using text preprocessing, sentence embeddings, TF-IDF, named entity recognition, and LDA topic modeling.
+                        </p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-600">
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100">NLP</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100" data-en="Embeddings" data-fr="Plongements (Embeddings)">Embeddings</span>
+                        <span class="px-2.5 py-1 rounded-md bg-slate-100">LDA</span>
+                    </div>
+                </div>
+
+                <!-- Music Generation -->
+                <div class="p-8 rounded-3xl bg-white border border-slate-200 shadow-sm flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <span class="text-xs font-mono bg-indigo-50 text-indigo-700 px-3 py-1 rounded-full font-semibold">EPFL • DH-401</span>
+                            <a href="https://github.com/shayayan/music_generation_epfl_dh401" target="_blank" rel="noopener noreferrer" class="text-slate-500 hover:text-slate-900">
+                                <i class="fa-brands fa-github text-lg"></i>
+                            </a>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-3" data-en="Algorithmic Music Generation" data-fr="Génération Musicale Algorithmique">Algorithmic Music Generation</h4>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-6" data-en="Three comprehensive assignments exploring Markov bigrams, Levenshtein distance costs, rhythmic distance calculations, statistical testing, and human-like Slangpolska generation." data-fr="Trois devoirs approfondis explorant les bigrammes de Markov, les coûts de distance de Levenshtein, les calculs de distance rythmique, les tests statistiques et la génération de Slangpolska réalistes.">
+                            Three comprehensive assignments exploring Markov bigrams, Levenshtein distance costs, rhythmic distance calculations, statistical testing, and human-like Slangpolska generation.
+                        </p>
+                    </div>
+                    <div class="space-y-3 pt-4 border-t border-slate-100 text-xs">
+                        <div class="flex justify-between items-center text-slate-700 font-medium">
+                            <span data-en="Assignment 1: Rhythm & Stats" data-fr="Devoir 1 : Rythme & Stats">Assignment 1: Rhythm & Stats</span>
+                            <a href="reports/Generating Rhythm.pdf" target="_blank" class="text-indigo-600 hover:underline"><span data-en="PDF Report" data-fr="Rapport PDF">PDF Report</span> <i class="fa-solid fa-file-pdf"></i></a>
+                        </div>
+                        <div class="flex justify-between items-center text-slate-700 font-medium">
+                            <span data-en="Assignment 2: Levenshtein Costs" data-fr="Devoir 2 : Coûts de Levenshtein">Assignment 2: Levenshtein Costs</span>
+                            <a href="https://github.com/shayayan/music_generation_epfl_dh401" target="_blank" rel="noopener noreferrer" class="text-indigo-600 hover:underline"><span data-en="Notebook & Code" data-fr="Notebook & Code">Notebook & Code</span> <i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <div class="flex justify-between items-center text-slate-700 font-medium">
+                            <span data-en="Assignment 3: Slangpolska Piece" data-fr="Devoir 3 : Morceau Slangpolska">Assignment 3: Slangpolska Piece</span>
+                            <a href="reports/Generating a Human-Like Slangpolska Piece.pdf" target="_blank" class="text-indigo-600 hover:underline"><span data-en="PDF Report" data-fr="Rapport PDF">PDF Report</span> <i class="fa-solid fa-file-pdf"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-24 max-w-6xl mx-auto px-6 text-center">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-indigo-600 mb-3 font-bold">Contact</h2>
+        <h3 class="text-3xl font-bold text-slate-900 mb-6" data-en="Let's Connect" data-fr="Restons en Contact">Let's Connect</h3>
+        <p class="text-slate-600 max-w-xl mx-auto mb-8" data-en="Open to opportunities in machine learning, sports analytics, and data science. Reach out via email or GitHub." data-fr="Ouvert aux opportunités en machine learning, analyse sportive et science des données. Contactez-moi par email ou GitHub.">
+            Open to opportunities in machine learning, sports analytics, and data science. Reach out via email or GitHub.
+        </p>
+        <div class="flex justify-center gap-4 flex-wrap">
+            <a href="mailto:shayan.khajehnouri@gmail.com" class="px-6 py-3 rounded-xl bg-slate-900 text-white font-semibold text-sm hover:bg-slate-800 transition-all flex items-center space-x-2">
+                <i class="fa-solid fa-envelope"></i>
+                <span>shayan.khajehnouri@gmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/shayan-khajehnouri-9ab667212/" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-slate-100 text-slate-900 font-semibold text-sm hover:bg-slate-200 transition-all flex items-center space-x-2">
+                <i class="fa-brands fa-linkedin text-indigo-600"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/shayayan" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-slate-100 text-slate-900 font-semibold text-sm hover:bg-slate-200 transition-all flex items-center space-x-2">
+                <i class="fa-brands fa-github"></i>
+                <span>GitHub</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 border-t border-slate-100 text-center text-slate-400 text-xs font-mono">
+        <span data-en="© 2026 Shayan Khajehnouri. All rights reserved." data-fr="© 2026 Shayan Khajehnouri. Tous droits réservés.">© 2026 Shayan Khajehnouri. All rights reserved.</span>
+    </footer>
+
+    <!-- Language Toggle Script -->
+    <script>
+        let currentLang = 'en';
+        function toggleLang() {
+            currentLang = currentLang === 'en' ? 'fr' : 'en';
+            document.getElementById('langText').innerText = currentLang === 'en' ? 'FR' : 'EN';
+
+            document.querySelectorAll('[data-en]').forEach(el => {
+                const text = el.getAttribute(`data-${currentLang}`);
+                if (text) {
+                    el.innerText = text;
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
