@@ -2,7 +2,7 @@
 
 Personal portfolio site for Shayan Khajehnouri — MSc Digital Humanities, EPFL.
 
-Static single-page site (HTML + Tailwind CDN), deployed via GitHub Pages.
+Static single-page site (plain HTML + CSS, no framework), deployed via GitHub Pages.
 
 Live at: https://shayayan.github.io/portfolio/
 
