@@ -107,7 +107,9 @@
   .card.plain:hover{border-color:var(--line);box-shadow:0 1px 2px rgba(26,25,24,.03)}
 
   /* Card internals */
-  .head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;flex-wrap:wrap}
+  .head{display:grid;grid-template-columns:1fr auto;align-items:start;gap:6px 18px;justify-items:start}
+  .head > div:first-child{min-width:0}
+  .head .right{justify-self:end;text-align:right}
   .card h3{font-size:1.1rem;font-weight:600;margin:0;letter-spacing:-.005em}
   .org{color:var(--muted);font-size:.93rem;margin:4px 0 0}
   .when{color:var(--muted);font-size:.8rem;letter-spacing:.03em;white-space:nowrap;margin-top:3px}
@@ -159,6 +161,8 @@
          display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 
   @media (max-width:760px){
+    .head{grid-template-columns:1fr}
+    .head .right{justify-self:start;text-align:left}
     .hero{padding:58px 0 50px}
     section{padding:50px 0}
     .card{padding:22px 20px}
@@ -233,7 +237,7 @@
               <h3>Data Scientist</h3>
               <p class="org" data-en="Losinger Marazzi (Bouygues Construction) — Warranty, Quality &amp; Prevention, Zurich" data-fr="Losinger Marazzi (Bouygues Construction) — Garantie, Qualité &amp; Prévention, Zurich">Losinger Marazzi (Bouygues Construction) — Warranty, Quality &amp; Prevention, Zurich</p>
             </div>
-            <div style="text-align:right">
+            <div class="right">
               <span class="badge now" data-en="Current role" data-fr="Poste actuel">Current role</span>
               <p class="when" data-en="Since March 2026" data-fr="Depuis mars 2026">Since March 2026</p>
             </div>
@@ -258,7 +262,7 @@
               <h3 data-en="Data Scientist — Computer Vision" data-fr="Data Scientist — Computer Vision">Data Scientist — Computer Vision</h3>
               <p class="org" data-en="Deep Scouting (STAT12), Marseille — with the EPFL master's thesis" data-fr="Deep Scouting (STAT12), Marseille — avec la thèse de master EPFL">Deep Scouting (STAT12), Marseille — with the EPFL master's thesis</p>
             </div>
-            <div style="text-align:right">
+            <div class="right">
               <span class="badge" data-en="Master's thesis" data-fr="Thèse de master">Master's thesis</span>
               <p class="when" data-en="March – September 2025" data-fr="Mars – septembre 2025">March – September 2025</p>
             </div>
@@ -314,7 +318,7 @@
               <h3 data-en="MSc in Digital Humanities" data-fr="Master en Digital Humanities">MSc in Digital Humanities</h3>
               <p class="org">EPFL</p>
             </div>
-            <p class="when">2022–2025</p>
+            <p class="when right">2022–2025</p>
           </div>
           <p class="body" data-en="Data science, machine learning, neural networks, computer vision, digital musicology." data-fr="Data science, machine learning, réseaux de neurones, vision par ordinateur, musicologie numérique.">Data science, machine learning, neural networks, computer vision, digital musicology.</p>
           <div class="tags"><span class="tag code" data-en="GPA 5.07 / 6.00" data-fr="Moyenne 5.07 / 6.00">GPA 5.07 / 6.00</span></div>
@@ -326,7 +330,7 @@
               <h3 data-en="BSc in Communication Systems" data-fr="Bachelor en Systèmes de communication">BSc in Communication Systems</h3>
               <p class="org">EPFL</p>
             </div>
-            <p class="when">2018–2022</p>
+            <p class="when right">2018–2022</p>
           </div>
           <p class="body" data-en="Analysis, databases, information security, machine learning, computability theory." data-fr="Analyse, bases de données, sécurité informatique, machine learning, théorie de la calculabilité.">Analysis, databases, information security, machine learning, computability theory.</p>
           <div class="tags"><span class="tag code" data-en="GPA 5.02 / 6.00" data-fr="Moyenne 5.02 / 6.00">GPA 5.02 / 6.00</span></div>
