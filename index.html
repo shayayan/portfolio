@@ -156,7 +156,7 @@
     <p class="meta" data-en="Lausanne region, Switzerland · Swiss citizen · MSc Digital Humanities, EPFL" data-fr="Région lausannoise, Suisse · Citoyen suisse · Master Digital Humanities, EPFL">Lausanne region, Switzerland · Swiss citizen · MSc Digital Humanities, EPFL</p>
     <p class="links">
       <a href="mailto:shayan.khajehnouri@gmail.com">Email</a>
-      <a href="CV_en.pdf" target="_blank" rel="noopener noreferrer" data-en="CV (PDF)" data-fr="CV (PDF)">CV (PDF)</a>
+      <a href="CV_Shayan_Khajehnouri_EN.pdf" data-href-en="CV_Shayan_Khajehnouri_EN.pdf" data-href-fr="CV_Shayan_Khajehnouri_FR.pdf" target="_blank" rel="noopener noreferrer" data-en="CV (PDF)" data-fr="CV (PDF)">CV (PDF)</a>
       <a href="https://www.linkedin.com/in/shayan-khajehnouri-9ab667212/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
       <a href="https://github.com/shayayan" target="_blank" rel="noopener noreferrer">GitHub</a>
     </p>
@@ -338,7 +338,7 @@
       <p class="links" style="margin-top:6px">
         <a href="https://www.linkedin.com/in/shayan-khajehnouri-9ab667212/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         <a href="https://github.com/shayayan" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="CV_en.pdf" target="_blank" rel="noopener noreferrer" data-en="CV (PDF)" data-fr="CV (PDF)">CV (PDF)</a>
+        <a href="CV_Shayan_Khajehnouri_EN.pdf" data-href-en="CV_Shayan_Khajehnouri_EN.pdf" data-href-fr="CV_Shayan_Khajehnouri_FR.pdf" target="_blank" rel="noopener noreferrer" data-en="CV (PDF)" data-fr="CV (PDF)">CV (PDF)</a>
       </p>
     </div>
   </section>
@@ -363,6 +363,9 @@
     document.querySelectorAll('[data-en]').forEach(el => {
       const text = el.getAttribute('data-' + lang);
       if (text) el.textContent = text;
+    });
+    document.querySelectorAll('[data-href-en]').forEach(el => {
+      el.setAttribute('href', el.getAttribute('data-href-' + lang));
     });
     try { localStorage.setItem('lang', lang); } catch (e) {}
   }

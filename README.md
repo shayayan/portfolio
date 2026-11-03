@@ -9,7 +9,7 @@ Live at: https://shayayan.github.io/portfolio/
 ## Structure
 
 - `index.html` — the site
-- `CV_en.pdf` — downloadable CV
+- `CV_Shayan_Khajehnouri_EN.pdf`, `CV_Shayan_Khajehnouri_FR.pdf` — downloadable CVs (LaTeX sources in `cv/`)
 - `reports/` — PDF write-ups linked from the Academic Portfolio section
 
 Project code lives in separate repos, linked from the site:
