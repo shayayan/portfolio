@@ -1,0 +1,45 @@
+% Shared layout for the EN and FR CVs.
+% Single column, plain text, standard fonts and section names, so that
+% applicant tracking systems (ATS) can parse it reliably.
+\documentclass[10pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tgheros}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[left=1.7cm,right=1.7cm,top=1.1cm,bottom=1.0cm]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+
+% make every glyph map back to real Unicode text (copy/paste, ATS parsing)
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
+\definecolor{muted}{gray}{0.32}
+\setlist[itemize]{leftmargin=1.1em,itemsep=1.5pt,topsep=2pt,parsep=0pt,partopsep=0pt}
+
+% \cvsection{Title}
+\newcommand{\cvsection}[1]{\par\vspace{6pt}{\bfseries\large #1}\par\vspace{-2pt}\rule{\linewidth}{0.5pt}\vspace{1pt}\par}
+% \entry{organisation}{place}{role}{dates}
+\newcommand{\entry}[4]{\par\vspace{4pt}\noindent{\bfseries #1}\hfill{\color{muted}#2}\par\noindent{\itshape #3}\hfill{\color{muted}#4}\par\vspace{1pt}}
+% \earlier{organisation}{role}{place}{dates}: one-line entry for older roles
+\newcommand{\earlier}[4]{\vspace{2pt}\noindent{\bfseries #1}, {\itshape #2}, {\color{muted}#3}\hfill{\color{muted}#4}\par}
+% \skill{label}{items}
+\newcommand{\cvcolon}{:}
+\newcommand{\skill}[2]{\noindent\textbf{#1}\cvcolon{} #2\par\vspace{1.5pt}}
+% \project{name}{description}
+\newcommand{\project}[2]{\item \textbf{#1}\cvcolon{} #2}
+
+\newcommand{\cvheader}[3]{% name, role line, contact lines
+  {\bfseries\fontsize{22}{26}\selectfont #1}\par\vspace{2pt}
+  {\large #2}\par\vspace{5pt}
+  {\small #3}\par
+}
