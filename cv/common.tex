@@ -11,10 +11,13 @@
 \usepackage{xcolor}
 \usepackage{microtype}
 \usepackage[hidelinks]{hyperref}
+\usepackage{fontawesome5}
 
 % make every glyph map back to real Unicode text (copy/paste, ATS parsing)
-\input{glyphtounicode}
-\pdfgentounicode=1
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
 
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
